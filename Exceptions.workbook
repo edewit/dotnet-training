@@ -1,6 +1,6 @@
 ---
 uti: com.xamarin.workbook
-platform: iOS
+platform: Android
 packages:
 - id: Newtonsoft.Json
   version: 9.0.1

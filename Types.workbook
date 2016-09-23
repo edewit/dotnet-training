@@ -1,6 +1,6 @@
 ---
 uti: com.xamarin.workbook
-platform: iOS
+platform: Android
 packages: []
 ---
 

@@ -1,6 +1,6 @@
 ---
 uti: com.xamarin.workbook
-platform: iOS
+platform: Android
 packages: []
 ---
 
@@ -17,28 +17,28 @@ To run the code in Xamarin Workbook:
 
 # Basic syntax
 
-C# is an object-oriented programming language. 
+C# is an object-oriented programming language.
 Let us look at implementation of a Rectangle class and discuss C# basic syntax:
 
 ```csharp
 using System;
 
-class Rectangle 
+class Rectangle
 {
 	// member variables
     double length;
     double width;
     public void Acceptdetails()
     {
-      length = 4.5;    
+      length = 4.5;
       width = 3.5;
     }
-      
+
     public double GetArea()
     {
-      return length * width; 
+      return length * width;
     }
-      
+
     public void Display()
     {
       Console.WriteLine("Length: {0} width {1}", length, width);
@@ -56,7 +56,7 @@ What can we note from this code snippet?
 * The `using` keyword is used for including the namespaces in the program.
 * upper case for `class` and `method` names, lower case for member variables (attributes).
 * `data type` can be `Value Type` (like `double`, `int`) or `Reference Type` (like `string`)
-* string interpolation with `{0}`, `+` operator can be used too 
+* string interpolation with `{0}`, `+` operator can be used too
 
 # Nullables
 
@@ -69,7 +69,7 @@ int? num1 = null;
 int? num2 = 45;
 double? num3 = new double?();
 double? num4 = 3.14157;
-int? num5 = num1 + num2; 
+int? num5 = num1 + num2;
 
 bool? boolval = new bool?();
 
@@ -89,7 +89,7 @@ Console.WriteLine("A Nullable boolean value: {0}", boolval);
 double? num1 = null;
 double? num2 = 3.14157;
 double num3;
-num3 = num1 ?? 5.34;      
+num3 = num1 ?? 5.34;
 Console.WriteLine(" Value of num3: {0}", num3);
 num3 = num2 ?? 5.34;
 Console.WriteLine(" Value of num3: {0}", num3);
@@ -97,10 +97,10 @@ Console.WriteLine(" Value of num3: {0}", num3);
 ```
 
 # Variable and constants
-C# supports *type inference* - which means that you don't always have to explicitly specify a type - you can let the compiler try and understand the type of variable automatically. 
+C# supports *type inference* - which means that you don't always have to explicitly specify a type - you can let the compiler try and understand the type of variable automatically.
 
 ```csharp
-const double pi = 3.14159;  
+const double pi = 3.14159;
 var x = 1;
 var y = 2;
 var sum = x + y;    // sum will also be defined as an integer
@@ -145,7 +145,7 @@ Console.WriteLine("Found orange in position: " + fruit.IndexOf("orange"));
 Console.WriteLine("Found lemon in position: " + fruit.IndexOf("lemon"));
 ```
 
-# Arrays, List and Dictionnaries 
+# Arrays, List and Dictionnaries
 
 Similar to Java:
 

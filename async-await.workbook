@@ -1,6 +1,6 @@
 ---
 uti: com.xamarin.workbook
-platform: iOS
+platform: Android
 packages: []
 ---
 
@@ -54,4 +54,3 @@ public void DoIndependentWork()
 var result = await AccessTheWebAsync();
 Console.WriteLine(result);
 ```
-

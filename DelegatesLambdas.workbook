@@ -1,6 +1,6 @@
 ---
 uti: com.xamarin.workbook
-platform: iOS
+platform: Android
 packages: []
 ---
 
@@ -21,7 +21,7 @@ Once a delegate type is declared, a delegate object must be created with the `ne
 ```csharp
 public class TestDelegate
 {
-    public int Num {get; set;} = 10; 
+    public int Num {get; set;} = 10;
 
     public int AddNum(int p)
     {
@@ -43,7 +43,7 @@ public class TestDelegate
 var obj = new TestDelegate();
 NumberChanger nc1 = new NumberChanger(obj.AddNum);
 NumberChanger nc2 = new NumberChanger(obj.MultNum);
-         
+
 // calling the methods using the delegate objects
 nc1(25);
 Console.WriteLine("Value of Num: {0}", obj.getNum());
@@ -68,7 +68,7 @@ var originalNC1 = composedNC - nc2;
 var resultOriginalNC1= originalNC1(5);
 
 Console.WriteLine("resultNC1 {0} resultComposedNC {1} resultOriginalNC1 {2}", resultNC1, resultComposedNC, resultOriginalNC1);
-if (nc1 == originalNC1) 
+if (nc1 == originalNC1)
 {
     Console.WriteLine("I told you so!");
 }
